@@ -1,0 +1,20 @@
+
+
+
+
+
+Steps to run the project in your local environment
+
+First unzip the zipped project file
+ then copy and paste the file in htdocs folder of xampp on c drive
+Then open the xampp server with Php 7.2
+you must have composer install
+then open the cmd from the delivery project folder 
+and type composer update to update and install composer
+Then run comand composer dump-autoload
+Then open your php myadmin from xampp mysql admin and create database with database name listed in .env file.
+then import delivery.sql file located in your unzipped project folder.
+then run comman php artisan serve
+then http link generate http:\\127.0.0.0:8000 and browse the link in browser and login page appears
+then logged into the system with admin username= root and password =rootstartx
+happy coding and enjoy the delivery system connecting local shops and customers.

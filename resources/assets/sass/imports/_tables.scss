@@ -1,0 +1,72 @@
+.force-table-responsive {
+  @extend .table-responsive;
+}
+
+.shipments-table table {
+  @extend .reports-table;
+  font-size: 0.75rem;
+
+  thead {
+    font-size: 0.65rem;
+  }
+
+  tbody tr td {
+    padding: .5rem;
+  }
+  tr.courier-assigned {
+    background: lighten(rgb(133, 172, 65), 35) !important;
+    &.even {
+      background: lighten(rgb(133, 172, 65), 30) !important;
+    }
+    .custom-control-label::before {
+      background-color: #fff;
+    }
+  }
+}
+
+.dataTable_empty {
+  padding: 22px 0;
+}
+
+
+.open-account-couriers {
+  @extend .shipments-table;
+
+  table {
+    thead {
+      background-color: $warning;
+      color: $black;
+    }
+
+    tbody tr td {
+      padding: 1rem .5rem;
+    }
+  }
+
+  .open {
+    background-color: lighten($danger, 32);
+  }
+
+  .table-key {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    .box {
+      margin-right: 6px;
+      width: 16px;
+      height: 16px;
+      border: 1px solid $secondary;
+    }
+  }
+}
+
+.inventory-summery-table {
+  th {
+    width: 25%;
+  }
+  td, th {
+    padding: .5rem .75rem;
+    font-size: .8rem;
+  }
+}

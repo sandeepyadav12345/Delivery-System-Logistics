@@ -1,0 +1,73 @@
+.zone-card {
+  height: 150px;
+  padding: 0 0.35rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .zone-info {
+    display: flex;
+    margin-top: auto;
+    > div {
+      text-align: center;
+      border-right: 1px solid #eee;
+      &:last-child {
+        border-right: none;
+      }
+      b {
+        font-size: 1.2rem;
+        display: block;
+      }
+    }
+  }
+  h4 {
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 0;
+    margin-top: -0.5rem;
+    background-color: #fff;
+    box-shadow: 0 8px 25px rgba(150, 150, 150, 0.5);
+  }
+}
+
+.zone-addresses-list {
+  max-height: 150px;
+  border-radius: 0;
+  border-top: none;
+  border-bottom: none;
+  .card-header {
+    padding: 0.5rem 1rem;
+  }
+  .list-group {
+    overflow-y: auto;
+  }
+  .list-group-item {
+    &.address-group-item {
+      display: flex;
+      padding: 0.25rem 0.75rem;
+      flex-shrink: 0;
+      .actions {
+        display: none;
+        margin-left: auto;
+        .btn {
+          padding: 0 0.5rem;
+        }
+        @include media-breakpoint-down('sm') {
+          display: flex;
+        }
+      }
+      &:hover .actions {
+        display: flex;
+      }
+    }
+  }
+}
+
+.zone-column {
+  padding: 0;
+  margin: 0.5rem 0 1.2rem;
+  border: 1px solid;
+  border-radius: 0.25rem;
+  &:hover {
+    background-color: #eeeeee;
+  }
+}

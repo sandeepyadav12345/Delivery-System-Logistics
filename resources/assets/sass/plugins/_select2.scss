@@ -1,0 +1,43 @@
+.select2-selection.select2-selection--multiple {
+  height: auto !important;
+}
+
+.popover-select2 {
+  z-index: 1070;
+}
+
+.select2.select2-container {
+  width: 100%;
+  display: block;
+}
+
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__arrow {
+  .rtl & {
+    right: auto;
+    left: 3px;
+  }
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+  .rtl & {
+    padding-right: 1rem;
+  }
+}
+
+.rtl .bootstrap-select {
+  > button.dropdown-toggle {
+    padding-left: 12px;
+    text-align: left;
+  }
+  .dropdown-menu li {
+    a {
+      text-align: right;
+    }
+  }
+}
+
+.bootstrap-select {
+  .dropdown-menu li small {
+    padding-right: .5rem;
+  }
+}
